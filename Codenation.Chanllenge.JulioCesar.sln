@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codenation.Chanllenge.JulioCesar.App", "Codenation.Chanllenge.JulioCesar.App\Codenation.Chanllenge.JulioCesar.App.csproj", "{8E913BC9-F36D-4562-8428-25ED95CF9053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codenation.Chanllenge.JulioCesar", "Codenation.Chanllenge.JulioCesar\Codenation.Chanllenge.JulioCesar.csproj", "{DE343DDB-CAB4-40D4-8A43-5DC8A328F3CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E913BC9-F36D-4562-8428-25ED95CF9053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E913BC9-F36D-4562-8428-25ED95CF9053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E913BC9-F36D-4562-8428-25ED95CF9053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E913BC9-F36D-4562-8428-25ED95CF9053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE343DDB-CAB4-40D4-8A43-5DC8A328F3CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE343DDB-CAB4-40D4-8A43-5DC8A328F3CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE343DDB-CAB4-40D4-8A43-5DC8A328F3CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE343DDB-CAB4-40D4-8A43-5DC8A328F3CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D69179E-C91B-4073-9A8E-A88AD2671A70}
+	EndGlobalSection
+EndGlobal
