@@ -8,7 +8,7 @@ namespace Codenation.Chanllenge.JulioCesar.Interfaces
     public interface ICodenationService
     {
         Cript GetCript(string token);
-        bool SendFileDecript(string FileLocation);
+        string SendFileDecript(string path, string fileName, string token);
 
     }
 }
