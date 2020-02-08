@@ -19,7 +19,7 @@ namespace Codenation.Chanllenge.JulioCesar.Services
             {
                 if (valueAscii[i] > 96 && valueAscii[i] < 123)
                 {
-                    result[i] = Convert.ToByte(GetChar(valueAscii[i], key));
+                    result[i] = Convert.ToByte(GetChar(valueAscii[i], -key));
                 }
                 else
                 {

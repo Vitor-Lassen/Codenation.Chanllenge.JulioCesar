@@ -10,7 +10,7 @@ namespace Codenation.Chanllenge.JulioCesar.Tests.Services
     public class CriptServiceTest
     {
         [TestMethod]
-        public void DecriptJulioCesar_WithValidTexts_Up()
+        public void DecriptJulioCesar_WithValidTexts_Cript()
         {
             //Arrange
             string original = "abcde.fghijk,lmno/pqr-stuvwxyz";
@@ -19,13 +19,13 @@ namespace Codenation.Chanllenge.JulioCesar.Tests.Services
             //Act
             var criptService = new CriptService();
 
-            var result = criptService.DecriptJulioCesar(original,1);
+            var result = criptService.DecriptJulioCesar(original,-1);
 
             //Assert
             Assert.AreEqual(result,expected);
         }
         [TestMethod]
-        public void DecriptJulioCesar_WithValidTexts_Down()
+        public void DecriptJulioCesar_WithValidTexts_Decript()
         {
             //Arrange
             string original = "abcde.fghijk,lmno/pqr-stuvwxyz";
@@ -34,7 +34,7 @@ namespace Codenation.Chanllenge.JulioCesar.Tests.Services
             //Act
             var criptService = new CriptService();
 
-            var result = criptService.DecriptJulioCesar(original, -1);
+            var result = criptService.DecriptJulioCesar(original, 1);
 
             //Assert
             Assert.AreEqual(result, expected);

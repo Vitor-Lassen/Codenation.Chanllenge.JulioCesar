@@ -3,7 +3,6 @@ using Codenation.Chanllenge.JulioCesar.Models;
 using Newtonsoft.Json;
 using RestSharp;
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Codenation.Chanllenge.JulioCesar.Services
@@ -15,16 +14,17 @@ namespace Codenation.Chanllenge.JulioCesar.Services
         {
             _restClient = restClient;
             _restClient.BaseUrl = new Uri("https://api.codenation.dev");
+            _restClient.Encoding = Encoding.UTF8;
         }
          
-        public Cript GetCript(string token)
+        public CriptDTO GetCript(string token)
         {
             RestRequest req = new RestRequest("v1/challenge/dev-ps/generate-data", Method.GET);
             req.AddParameter("token", token);
             var response = _restClient.Execute(req);
             if (response.IsSuccessful)
             {
-                return JsonConvert.DeserializeObject<Cript>(response.Content);
+                return JsonConvert.DeserializeObject<CriptDTO>(response.Content);
             }
             else
             {
@@ -34,7 +34,7 @@ namespace Codenation.Chanllenge.JulioCesar.Services
 
         public string SendFileDecript(string path, string fileName, string token)
         {
-            RestRequest req = new RestRequest("v1/challenge/dev-ps/submit-solution", Method.GET);
+            RestRequest req = new RestRequest($"v1/challenge/dev-ps/submit-solution?token={token}", Method.POST);
             req.AddParameter("token", token);
             req.AlwaysMultipartFormData = true;
             req.AddHeader("Content-Type", "multipart/form-data");

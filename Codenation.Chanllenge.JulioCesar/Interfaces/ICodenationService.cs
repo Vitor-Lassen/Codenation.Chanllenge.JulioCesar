@@ -7,7 +7,7 @@ namespace Codenation.Chanllenge.JulioCesar.Interfaces
 {
     public interface ICodenationService
     {
-        Cript GetCript(string token);
+        CriptDTO GetCript(string token);
         string SendFileDecript(string path, string fileName, string token);
 
     }
