@@ -34,7 +34,7 @@ namespace Codenation.Chanllenge.JulioCesar.Services
             byte[] data = Encoding.Default.GetBytes(value);
             SHA1 sha = new SHA1CryptoServiceProvider();
             var result = sha.ComputeHash(data);
-            return BitConverter.ToString(result).Replace("-","");
+            return BitConverter.ToString(result).Replace("-","").ToLower();
         }
 
         private int GetChar(int charAscii, int key)

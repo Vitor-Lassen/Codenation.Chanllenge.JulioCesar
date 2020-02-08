@@ -45,7 +45,7 @@ namespace Codenation.Chanllenge.JulioCesar.Tests.Services
         {
             //Arrange
             string original = "apple";
-            string expected = "D0BE2DC421BE4FCD0172E5AFCEEA3970E2F3D940";
+            string expected = "d0be2dc421be4fcd0172e5afceea3970e2f3d940";
 
             //Act
             var criptService = new CriptService();

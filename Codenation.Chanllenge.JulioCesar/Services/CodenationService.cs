@@ -34,8 +34,8 @@ namespace Codenation.Chanllenge.JulioCesar.Services
 
         public string SendFileDecript(string path, string fileName, string token)
         {
-            RestRequest req = new RestRequest($"v1/challenge/dev-ps/submit-solution?token={token}", Method.POST);
-            req.AddParameter("token", token);
+            RestRequest req = new RestRequest($"v1/challenge/dev-ps/submit-solution", Method.POST);
+            req.AddParameter("token", token,ParameterType.QueryString);
             req.AlwaysMultipartFormData = true;
             req.AddHeader("Content-Type", "multipart/form-data");
             req.AddFile(fileName, path);
