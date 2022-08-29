@@ -25,8 +25,6 @@ namespace Codenation.Chanllenge.JulioCesar.App
             var path = @"D:\teste\";
             var fileName = "answer";
 
-            var teste = 1;
-            
 
             Console.WriteLine("Start Application");
             Console.WriteLine("Input token:");
